@@ -25,6 +25,8 @@
 		60B14CA519A23D6D00BA1B9F /* MCSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B14CA419A23D6D00BA1B9F /* MCSAnnotation.m */; };
 		60B14CA719A248BC00BA1B9F /* pin-blue-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B14CA619A248BC00BA1B9F /* pin-blue-1.png */; };
 		60B14CAD19A24DF200BA1B9F /* pin-red-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B14CAC19A24DF200BA1B9F /* pin-red-1.png */; };
+		60B14CB319A27E9600BA1B9F /* MCSFoureSquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B14CB219A27E9600BA1B9F /* MCSFoureSquareRequest.m */; };
+		60B14CB719A2804C00BA1B9F /* MCSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B14CB619A2804C00BA1B9F /* MCSTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		60B14CA419A23D6D00BA1B9F /* MCSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSAnnotation.m; sourceTree = "<group>"; };
 		60B14CA619A248BC00BA1B9F /* pin-blue-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pin-blue-1.png"; path = "../../../../../Downloads/Map Location Pins 2/PNG/pin-blue-1.png"; sourceTree = "<group>"; };
 		60B14CAC19A24DF200BA1B9F /* pin-red-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pin-red-1.png"; path = "../../../../../Downloads/Map Location Pins 2/PNG/pin-red-1.png"; sourceTree = "<group>"; };
+		60B14CB119A27E9600BA1B9F /* MCSFoureSquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSFoureSquareRequest.h; sourceTree = "<group>"; };
+		60B14CB219A27E9600BA1B9F /* MCSFoureSquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSFoureSquareRequest.m; sourceTree = "<group>"; };
+		60B14CB519A2804C00BA1B9F /* MCSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSTableViewController.h; sourceTree = "<group>"; };
+		60B14CB619A2804C00BA1B9F /* MCSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +133,15 @@
 				60B14C8019A2333B00BA1B9F /* Main_iPad.storyboard */,
 				60B14C8319A2333B00BA1B9F /* MCSViewController.h */,
 				60B14C8419A2333B00BA1B9F /* MCSViewController.m */,
+				60B14CB519A2804C00BA1B9F /* MCSTableViewController.h */,
+				60B14CB619A2804C00BA1B9F /* MCSTableViewController.m */,
 				60B14C8619A2333B00BA1B9F /* Images.xcassets */,
 				60B14CAE19A2522600BA1B9F /* Images */,
 				60B14C7219A2333B00BA1B9F /* Supporting Files */,
 				60B14CA319A23D6D00BA1B9F /* MCSAnnotation.h */,
 				60B14CA419A23D6D00BA1B9F /* MCSAnnotation.m */,
+				60B14CB119A27E9600BA1B9F /* MCSFoureSquareRequest.h */,
+				60B14CB219A27E9600BA1B9F /* MCSFoureSquareRequest.m */,
 			);
 			path = "My Cool Spots";
 			sourceTree = "<group>";
@@ -276,9 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				60B14CA519A23D6D00BA1B9F /* MCSAnnotation.m in Sources */,
+				60B14CB719A2804C00BA1B9F /* MCSTableViewController.m in Sources */,
 				60B14C8519A2333B00BA1B9F /* MCSViewController.m in Sources */,
 				60B14C7C19A2333B00BA1B9F /* MCSAppDelegate.m in Sources */,
 				60B14C7819A2333B00BA1B9F /* main.m in Sources */,
+				60B14CB319A27E9600BA1B9F /* MCSFoureSquareRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +505,7 @@
 				60B14C9F19A2333B00BA1B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60B14CA019A2333B00BA1B9F /* Build configuration list for PBXNativeTarget "My Cool SpotsTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +514,7 @@
 				60B14CA219A2333B00BA1B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

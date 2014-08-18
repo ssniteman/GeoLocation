@@ -8,6 +8,8 @@
 
 #import "MCSViewController.h"
 
+#import "MCSTableViewController.h"
+
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "MCSAnnotation.h"
@@ -21,6 +23,9 @@
     MKMapView * mapView;
     
     CLLocationManager * locationManager;
+    
+    MCSTableViewController * tableVenues;
+    
 }
 
 - (void)viewDidLoad
@@ -29,7 +34,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     
-    mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
+    mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, (self.view.frame.size.height) / 2)];
     mapView.showsUserLocation = YES;
     mapView.delegate = self;
 //    mapView.userTrackingMode = YES;
@@ -39,6 +44,14 @@
     locationManager.delegate = self;
     [locationManager startUpdatingLocation];
     
+    
+    tableVenues = [[MCSTableViewController alloc] init];
+    tableVenues.view.frame = CGRectMake(0, (self.view.frame.size.height) / 2, self.view.frame.size.width, (self.view.frame.size.height) / 2);
+    
+    [self.view addSubview:tableVenues.tableView];
+    
+    [self addChildViewController:tableVenues];
+    
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -46,6 +59,10 @@
     for (CLLocation * location in locations)
     {
         NSLog(@"%f %f",location.coordinate.latitude, location.coordinate.longitude);
+        
+        
+        // call FoureSquareRequest and create annotations for each venue
+        
         
         MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(1.0, 1.0));
         
